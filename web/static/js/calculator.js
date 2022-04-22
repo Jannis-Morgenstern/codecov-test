@@ -45,7 +45,7 @@ export class Calculator {
     let operation
     switch (this.operation) {
       case '+':
-        operation = 'add'
+        operation = "add"
         break
       case '-':
         operation = 'subtract'
