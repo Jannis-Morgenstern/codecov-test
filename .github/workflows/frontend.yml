@@ -23,9 +23,11 @@ jobs:
       run: npm install
     - name: Run tests and collect coverage
       run: npm run test
+    - name: rm
+      run: |
+        rm ./coverage/clover.xml
     - name: Upload coverage reports to Codecov with GitHub Action
       uses: codecov/codecov-action@v2
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         flags: frontend
-        files: ./coverage/coverage-final.json
