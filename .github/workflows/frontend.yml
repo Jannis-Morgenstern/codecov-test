@@ -25,7 +25,7 @@ jobs:
       run: npm run test
     - name: rm
       run: |
-        rm ./coverage/clover.xml
+        rm ./coverage/clover.xml && rm ./coverage/lcov.info
     - name: Upload coverage reports to Codecov with GitHub Action
       uses: codecov/codecov-action@v2
       with:
