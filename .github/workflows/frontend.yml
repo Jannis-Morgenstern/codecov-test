@@ -26,3 +26,4 @@ jobs:
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         flags: frontend
+        files: ./coverage/coverage-final.json
